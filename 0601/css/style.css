@@ -1,0 +1,154 @@
+:root {
+  --bg: #fffaf3;
+  --card: #fffdf8;
+  --primary: #d4a373;
+  --primary-dark: #b37a42; /* hover */
+  --darktext: #3b2f2f;
+  --lighttext: #6e6259;
+  --border: #e9e0d2;
+  --shadow: rgba(0, 0, 0, 0.08);
+  --radius: 14px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--darktext);
+  font: "Poppins";
+  line-height: 1.5;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-dark);
+  margin: 0 auto 24px auto;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: fit-content;
+}
+
+form {
+  max-width: 750px;
+  margin: 0 auto;
+  background: var(--card);
+  padding: 32px;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 18px var(--shadow);
+  border: 1px solid var(--border);
+}
+
+fieldset {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 24px;
+  padding: 20px 24px;
+  background-color: var(--card);
+}
+
+fieldset:hover {
+  box-shadow: 0 4px 12px rgba(212, 163, 115, 0.15);
+}
+
+legend {
+  font-weight: 600;
+  color: var(--primary-dark);
+  padding: 0 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+td {
+  padding: 6px 0;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  color: var(--lighttext);
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fffdf8;
+  color: var(--darktext);
+  font-size: 0.95rem;
+}
+
+input[type="text"]:focus,
+select:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(212, 163, 115, 0.25);
+}
+
+input[type="radio"] {
+  accent-color: var(--primary);
+  margin-right: 6px;
+}
+
+input[type="radio"] + label {
+  display: inline-block;
+  margin-right: 18px;
+  color: var(--darktext);
+}
+
+#submit,
+input[type="submit"] {
+  background-color: var(--primary);
+  color: var(--card);
+  border: none;
+  border-radius: 999px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: var(--primary-dark);
+}
+
+p {
+  text-align: center;
+  margin-top: 8px;
+}
+
+input[type="text"]:hover,
+select:hover {
+  background-color: #fff8f0;
+}
+
+input::placeholder {
+  color: #c1b6a2;
+}
+
+input[type="date"] {
+  background-color: #fffaf3;
+  border: 1px solid #e9e0d2;
+  border-radius: 10px;
+  padding: 10px 12px;
+  color: #3b2f2f;
+  font: "Poppins";
+  font-size: 0.95rem;
+}
+
+input[type="date"]:focus {
+  border-color: #d4a373;
+  box-shadow: 0 0 0 4px rgba(212, 163, 115, 0.25);
+  outline: none;
+}
